@@ -1,0 +1,14 @@
+{
+  "selected_model": "Neural MLP",
+  "threshold": 0.5,
+  "label_mapping": {
+    "0": "Legitimate",
+    "1": "Phishing"
+  },
+  "dataset_sha256": "73a5c5410baf46ed69517fedfd37910f2e93777dc504b73ea483bc16be3a69d1",
+  "sklearn_version": "1.9.0",
+  "seed": 42,
+  "selection_rule": "Highest validation F1, then recall, then ROC AUC; exact tie favours baseline",
+  "input": "Plain subject/body text; preprocessing is inside the saved Pipeline",
+  "limitation": "Positive labels include spam; probability is not calibrated proof of phishing."
+}

@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "3a21343518a3a5e762d964ef6eced697f3cbde3a6d0ab7c9cbe0c17dc93b98f8",
+  "csv_sha256": "73a5c5410baf46ed69517fedfd37910f2e93777dc504b73ea483bc16be3a69d1",
+  "archive_members": [
+    "CEAS_08.csv",
+    "Enron.csv",
+    "Ling.csv",
+    "Nazario.csv",
+    "Nigerian_Fraud.csv",
+    "SpamAssasin.csv",
+    "phishing_email.csv"
+  ]
+}

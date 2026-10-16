@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checks": [
+    "Live HTTP health endpoint returned 200 and model loaded",
+    "Blank input handled in Tkinter",
+    "Real Tkinter -> HTTP FastAPI -> model -> result/confidence/indicators verified",
+    "Clear resets message and result",
+    "Unavailable API shown cleanly in actual desktop widgets"
+  ],
+  "sample_result": {
+    "prediction": "phishing",
+    "confidence": 0.9954473376274109,
+    "phishing_probability": 0.9954473376274109,
+    "model": "Neural MLP",
+    "indicators": [
+      {
+        "term": "immediately",
+        "probability_drop": 0.003880620002746582
+      },
+      {
+        "term": "verify",
+        "probability_drop": 0.0038265585899353027
+      },
+      {
+        "term": "suspended",
+        "probability_drop": 0.0036783814430236816
+      },
+      {
+        "term": "account",
+        "probability_drop": 0.0033870339393615723
+      },
+      {
+        "term": "example",
+        "probability_drop": -0.002071082592010498
+      }
+    ],
+    "warning": null
+  }
+}

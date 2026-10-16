@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Your account has been suspended. Verify your password immediately at https://account-check.example/login.",
+    "p_phishing": 0.9954473376274109
+  },
+  {
+    "text": "Hi team, please find the meeting agenda attached. We will review the project report tomorrow. Thanks.",
+    "p_phishing": 0.0001176391015178524
+  },
+  {
+    "text": "Congratulations! You have won a cash prize. Send your banking details to claim the money now.",
+    "p_phishing": 0.9937949180603027
+  },
+  {
+    "text": "Hi Sam, are we still meeting for lunch on Friday? Please let me know.",
+    "p_phishing": 0.0011515268124639988
+  },
+  {
+    "text": "ACCOUNT   Verify\nPassword!",
+    "p_phishing": 0.9868721961975098
+  },
+  {
+    "text": "Caf\u00e9 meeting report",
+    "p_phishing": 0.09953632950782776
+  },
+  {
+    "text": "zzzzunknownqqqq",
+    "p_phishing": 0.8060246706008911
+  },
+  {
+    "text": "!!!",
+    "p_phishing": 0.8060246706008911
+  }
+]

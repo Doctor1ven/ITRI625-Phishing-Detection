@@ -1,0 +1,6 @@
+decision,rows_before,rows_removed,rows_after
+Missing or blank text,82486,1,82485
+Missing or unexpected target,82485,0,82485
+No usable tokens,82485,1,82484
+Conflicting labels for equivalent text,82484,0,82484
+Repeated token-equivalent text,82484,433,82051

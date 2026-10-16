@@ -1,0 +1,124 @@
+{
+  "dataset": {
+    "filename": "phishing_email.csv",
+    "raw_rows": 82486,
+    "clean_rows": 82051,
+    "columns": [
+      "text_combined",
+      "label"
+    ],
+    "raw_class_counts": {
+      "0": 39595,
+      "1": 42891
+    },
+    "missing_values": {
+      "text_combined": 0,
+      "label": 0
+    },
+    "blank_text_rows": 1,
+    "duplicate_rows": 408,
+    "sha256": "73a5c5410baf46ed69517fedfd37910f2e93777dc504b73ea483bc16be3a69d1"
+  },
+  "cleaning": [
+    {
+      "decision": "Missing or blank text",
+      "rows_before": 82486,
+      "rows_removed": 1,
+      "rows_after": 82485
+    },
+    {
+      "decision": "Missing or unexpected target",
+      "rows_before": 82485,
+      "rows_removed": 0,
+      "rows_after": 82485
+    },
+    {
+      "decision": "No usable tokens",
+      "rows_before": 82485,
+      "rows_removed": 1,
+      "rows_after": 82484
+    },
+    {
+      "decision": "Conflicting labels for equivalent text",
+      "rows_before": 82484,
+      "rows_removed": 0,
+      "rows_after": 82484
+    },
+    {
+      "decision": "Repeated token-equivalent text",
+      "rows_before": 82484,
+      "rows_removed": 433,
+      "rows_after": 82051
+    }
+  ],
+  "splits": [
+    {
+      "split": "Training",
+      "samples": 57435,
+      "Legitimate": 27449,
+      "Phishing": 29986,
+      "phishing_percent": 52.20858361626186
+    },
+    {
+      "split": "Validation",
+      "samples": 12308,
+      "Legitimate": 5882,
+      "Phishing": 6426,
+      "phishing_percent": 52.20994475138122
+    },
+    {
+      "split": "Test",
+      "samples": 12308,
+      "Legitimate": 5882,
+      "Phishing": 6426,
+      "phishing_percent": 52.20994475138122
+    }
+  ],
+  "validation": {
+    "Logistic Regression": {
+      "accuracy": 0.9862690932726682,
+      "precision": 0.9837637235194062,
+      "recall": 0.9900404606286959,
+      "f1": 0.986892111998759,
+      "auc_roc": 0.9986626975396302,
+      "loss": 0.0680094063282013
+    },
+    "Neural MLP": {
+      "accuracy": 0.989275268118297,
+      "precision": 0.9889683032939715,
+      "recall": 0.9905073140367258,
+      "f1": 0.9897372103871871,
+      "auc_roc": 0.9993051831787156,
+      "loss": 0.03134898468852043
+    }
+  },
+  "selected_model": "Neural MLP",
+  "test": {
+    "accuracy": 0.9900064998375041,
+    "precision": 0.9898958495258822,
+    "recall": 0.9909741674447556,
+    "f1": 0.9904347149856132,
+    "auc_roc": 0.9991153702026355,
+    "loss": 0.031831126660108566
+  },
+  "test_average_precision": 0.9991581188274106,
+  "test_confusion_matrix": [
+    [
+      5817,
+      65
+    ],
+    [
+      58,
+      6368
+    ]
+  ],
+  "training": {
+    "requested_epochs": 30,
+    "trained_epochs": 11,
+    "best_epoch": 8,
+    "best_validation_loss": 0.03134898468852043,
+    "patience": 3,
+    "early_stopping_triggered": true,
+    "seconds": 3.2596110419999604
+  }
+}

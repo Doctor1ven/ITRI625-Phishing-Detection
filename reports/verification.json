@@ -1,0 +1,29 @@
+{
+  "notebook_valid": true,
+  "executed_code_cells": 15,
+  "embedded_png_figures": 7,
+  "notebook_errors": 0,
+  "full_executions": 4,
+  "modelling_settings_changed_after_test": false,
+  "raw_archive_unchanged": true,
+  "raw_csv_unchanged": true,
+  "unique_split_source_rows": 82051,
+  "neural_parameter_count": 320065,
+  "best_epoch_restored": 8,
+  "early_stopping_triggered": true,
+  "application_integration_tests_passed": 7,
+  "live_desktop_and_http_checks_passed": true,
+  "desktop_visual_review": "Passed; reports/desktop_preview.png",
+  "figure_review": "Seven Matplotlib figures present in notebook and figures directory",
+  "git_history": "Final project files grouped into honest technical commits and prepared for the main branch",
+  "final_submission_audit": {
+    "notebook_reexecuted": true,
+    "metrics_consistent_across_notebook_docs_and_reports": true,
+    "confusion_matrix_metrics_recalculated": true,
+    "figures_visually_reviewed": true,
+    "academic_references_verified": 3,
+    "automated_tests_passed": 7,
+    "dependency_check_passed": true,
+    "model_architecture_changed": false
+  }
+}
