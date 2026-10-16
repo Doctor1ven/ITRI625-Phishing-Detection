@@ -2,13 +2,13 @@
 
 A Python cybersecurity ML project with a fully executed Jupyter notebook, TF-IDF Logistic Regression baseline, small neural network with patience-based early stopping, FastAPI inference, and a Tkinter desktop client.
 
-**Start with `notebooks/phishing_detection.ipynb`.** All important model code, explanations, metrics, and Matplotlib figures are inside the notebook. It is independent of the application modules. `THEORY_NOTES.md` follows assignment sections 3.1–3.4; `RUBRIC_CHECKLIST.md` maps verified evidence to marks.
+**Start with `notebooks/phishing_detection.ipynb`.** All important model code, explanations, metrics, and Matplotlib figures are inside the notebook. It is independent of the application modules.
 
 ## Dataset and problem
 
 The supplied `../archive.zip` contains seven CSVs. We use only `data/raw/phishing_email.csv`: 82,486 rows, columns `text_combined` (text) and `label` (0 = Legitimate, 1 = Phishing). Raw classes: 39,595 legitimate / 42,891 phishing, approximately balanced. The notebook retains 82,051 rows after documented cleaning and creates 57,435 / 12,308 / 12,308 stratified training / validation / test sets with seed 42.
 
-[Assignment-linked dataset](https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset). See `data/README.md` and `reports/INITIAL_INSPECTION.md` for provenance, all archive members, inspection findings, label evidence, and limitations. The archive and extracted raw data are unchanged. Positive labels include spam; a model prediction is neither proof of phishing nor a safety guarantee. The combined CSV's upstream preprocessing is not supplied.
+[Assignment-linked dataset](https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset). See `data/README.md` for provenance and limitations. The archive and extracted raw data are unchanged. Positive labels include spam; a model prediction is neither proof of phishing nor a safety guarantee. The combined CSV's upstream preprocessing is not supplied.
 
 ## Project structure
 
@@ -26,9 +26,7 @@ ITRI625-Phishing-Detection/
 ├── scripts/verify_desktop.py           # Real Tkinter + live HTTP smoke check
 ├── start_project.command               # One-command macOS launcher
 ├── requirements.txt                   # Direct dependencies, pinned
-├── requirements-lock.txt              # Full tested environment
-├── THEORY_NOTES.md
-└── RUBRIC_CHECKLIST.md
+└── requirements-lock.txt              # Full tested environment
 ```
 
 ## Installation and Jupyter setup (macOS/Linux)
